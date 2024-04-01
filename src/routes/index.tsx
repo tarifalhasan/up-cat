@@ -1,5 +1,8 @@
 import { component$ } from "@builder.io/qwik";
+import type { DocumentHead } from "@builder.io/qwik-city";
 import { FaTelegram, FaXTwitter } from "@qwikest/icons/font-awesome";
+import img1 from "../media/1.png";
+import img2 from "../media/2.png";
 import line from "../media/Line1.png";
 import catImage from "../media/cat.png";
 import dex_scanner from "../media/dex-scanner.svg";
@@ -95,6 +98,51 @@ export default component$(() => {
           </div>
         </div>
       </div>
+      <img
+        src={img1}
+        alt="polygon"
+        width={64}
+        height={64}
+        class=" absolute top-0 right-0"
+      />
+      <img
+        src={img2}
+        alt="polygon"
+        width={64}
+        height={64}
+        class=" absolute bottom-0 left-0"
+      />
+      <div class="absolute top-0 right-[25%] lg:right-[10%] h-[85px] w-[13px] bg-[#161616]"></div>
+      <div class="absolute bottom-0 left-[25%] lg:left-[8%] h-[85px] w-[13px] bg-[#161616]"></div>
+      <div class="absolute top-0 right-[40%] lg:right-[15%] h-[92px] w-[13px] bg-[#161616]"></div>
+      <div class="absolute hidden sm:block bottom-0  left-1/2  h-[92px] w-[13px] bg-[#161616]"></div>
     </>
   );
 });
+
+export const head: DocumentHead = {
+  // This will be used to resolve the <title> of the page
+  title: "up cat",
+  meta: [
+    {
+      name: "description",
+      content: "The video of the kitten went viral in 2020. ",
+    },
+    // Open graph
+    {
+      property: "og:title",
+      content: "up cat",
+    },
+    {
+      property: "og:description",
+      content:
+        "also known as Standing Kitten, is a kitten that appeared to be standing in a video. ",
+    },
+  ],
+  links: [
+    {
+      rel: "canonical",
+      href: "https://example.com/about",
+    },
+  ],
+};
