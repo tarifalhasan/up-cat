@@ -12,7 +12,7 @@ export default component$(() => {
   return (
     <>
       <div class="min-h-screen  relative overflow-hidden bg-black text-white">
-        <div class="flex w-full  px-4 lg:px-10 py-6">
+        <div class="flex w-full   px-4 lg:px-10 py-6">
           <img width={112} height={34} src={logo} alt="logo" />
         </div>
         <div
@@ -42,7 +42,7 @@ export default component$(() => {
             </div>
           </div>
           <div class="basis-full sm:gap-4 gap-10  lg:basis-1/2 flex flex-col sm:flex-row  lg:flex-row sm:items-center sm:justify-center ">
-            <div class=" order-last sm:order-first  flex-col xl:absolute mt-6  lg:left-[2%] lg:-bottom-14 xl:-bottom-2 sm:max-w-max mx-auto   sm:gap-5  grid grid-cols-2 sm:flex gap-8 sm:flex-col ">
+            <div class=" order-last sm:order-first  flex-col z-30 xl:absolute mt-6  lg:left-[2%] lg:-bottom-14 xl:-bottom-2 sm:max-w-max mx-auto   sm:gap-5  grid grid-cols-2 sm:flex gap-8 sm:flex-col ">
               <a
                 href="/"
                 target="_blank"
@@ -113,8 +113,8 @@ export default component$(() => {
         class=" absolute bottom-0 left-0"
       />
       <div class="absolute top-0 right-[25%] lg:right-[10%] h-[85px] w-[13px] bg-[#161616]"></div>
-      <div class="absolute bottom-0 left-[25%] lg:left-[8%] h-[85px] w-[13px] bg-[#161616]"></div>
-      <div class="absolute top-0 right-[40%] lg:right-[15%] h-[92px] w-[13px] bg-[#161616]"></div>
+      <div class="absolute z-20 bottom-0 left-[25%] lg:left-[8%] h-[85px] w-[13px] bg-[#161616]"></div>
+      <div class="absolute z-20 top-0 right-[40%] lg:right-[15%] h-[92px] w-[13px] bg-[#161616]"></div>
       <div class="absolute hidden sm:block bottom-0  left-1/2  h-[92px] w-[13px] bg-[#161616]"></div>
     </>
   );
