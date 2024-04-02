@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { FaTelegram, FaXTwitter } from "@qwikest/icons/font-awesome";
-import dex_scanner from "../../";
-import dex_tool from "../media/dex-tool.svg";
+import dex_scanner from "../../media/dex-scanner.svg";
+import dex_tool from "../../media/dex-tool.svg";
 export const SocialLinks = component$(() => {
   return (
     <div class=" order-last sm:order-first  flex-col z-30 xl:absolute mt-6  lg:left-[2%] lg:-bottom-14 xl:-bottom-2 sm:max-w-max mx-auto   sm:gap-5  grid grid-cols-2 sm:flex gap-8 sm:flex-col ">
