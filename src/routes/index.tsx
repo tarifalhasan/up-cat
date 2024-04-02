@@ -76,11 +76,13 @@ export default component$(() => {
 export const head: DocumentHead = {
   // This will be used to resolve the <title> of the page
   title: "up cat",
+
   meta: [
     {
       name: "description",
       content: "The video of the kitten went viral in 2020. ",
     },
+
     // Open graph
     {
       property: "og:title",
