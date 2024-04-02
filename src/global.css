@@ -18,4 +18,5 @@
 
 body {
   font-family: "Trafika Sans v1", sans-serif;
+  user-select: none;
 }
