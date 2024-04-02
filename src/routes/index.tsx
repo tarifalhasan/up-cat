@@ -1,20 +1,18 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import { FaTelegram, FaXTwitter } from "@qwikest/icons/font-awesome";
 import img1 from "../media/1.png";
 import img2 from "../media/2.png";
 import line from "../media/Line1.png";
 import catImage from "../media/cat.png";
-import dex_scanner from "../media/dex-scanner.svg";
-import dex_tool from "../media/dex-tool.svg";
-import logo from "../media/logo.svg";
+
+import { Header } from "~/components/header";
+import { SocialLinks } from "~/components/social-links";
+
 export default component$(() => {
   return (
     <>
       <div class="min-h-screen  relative overflow-hidden bg-black text-white">
-        <div class="flex w-full   px-4 lg:px-10 py-6">
-          <img width={112} height={34} src={logo} alt="logo" />
-        </div>
+        <Header />
         <div
           class="w-full px-4 container mx-auto flex lg:flex-row
       flex-col absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 lg:items-center gap-6"
@@ -42,52 +40,7 @@ export default component$(() => {
             </div>
           </div>
           <div class="basis-full sm:gap-4 gap-10  lg:basis-1/2 flex flex-col sm:flex-row  lg:flex-row sm:items-center sm:justify-center ">
-            <div class=" order-last sm:order-first  flex-col z-30 xl:absolute mt-6  lg:left-[2%] lg:-bottom-14 xl:-bottom-2 sm:max-w-max mx-auto   sm:gap-5  grid grid-cols-2 sm:flex gap-8 sm:flex-col ">
-              <a
-                href="/"
-                target="_blank"
-                class="text-base gap-3 flex  items-center font-normal text-white transition-all  duration-700 hover:text-[#FFE167]"
-              >
-                <FaTelegram class=" w-4 h-4" />
-                <span>Telegram</span>
-              </a>
-              <a
-                href="/"
-                target="_blank"
-                class="text-base gap-3 flex  items-center font-normal text-white transition-all duration-700 hover:text-[#FFE167]"
-              >
-                <FaXTwitter class=" w-4 h-4" />
-                <span>X</span>
-              </a>
-              <a
-                href="/"
-                target="_blank"
-                class="text-base gap-3 flex basis-1/2 w-1/2 sm:w-full sm:basis-full items-center font-normal text-white transition-all hover:fill-[#ffe167] duration-700 hover:text-[#FFE167]"
-              >
-                <img
-                  src={dex_scanner}
-                  alt="lied"
-                  width={20}
-                  class=" w-5 h-5 block "
-                  height={20}
-                />
-                <span>Dexscreener</span>
-              </a>
-              <a
-                href="/"
-                target="_blank"
-                class="text-base gap-3 flex basis-1/2 w-1/2 sm:w-full sm:basis-full items-center font-normal text-white transition-all hover:fill-[#ffe167] duration-700 hover:text-[#FFE167]"
-              >
-                <img
-                  src={dex_tool}
-                  alt="lied"
-                  width={20}
-                  class="block "
-                  height={20}
-                />
-                <span>Dextools</span>
-              </a>
-            </div>
+            <SocialLinks />
             <img
               width={651}
               class="max-w-[214px] block mx-auto sm:max-w-[320px] lg:max-w-[345px] xl:max-w-[480px] 2xl:max-w-[651px]"

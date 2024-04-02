@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply relative w-full h-full;
+  }
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Trafika Sans v1";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/trafika_sans_regular-webfont.woff2") format("woff2");
+}
+
+body {
+  font-family: "Trafika Sans v1", sans-serif;
+}
