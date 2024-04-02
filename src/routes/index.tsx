@@ -1,9 +1,9 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
-import img1 from "../media/1.png";
-import img2 from "../media/2.png";
-import line from "../media/Line1.png";
-import catImage from "../media/cat.png";
+import img1 from "../media/1.webp";
+import img2 from "../media/2.webp";
+import line from "../media/Line1.webp";
+import catImage from "../media/cat.webp";
 
 import { Header } from "~/components/header";
 import { SocialLinks } from "~/components/social-links";
