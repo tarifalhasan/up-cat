@@ -4,7 +4,7 @@ import dex_scanner from "../../media/dex-scanner.svg";
 import dex_tool from "../../media/dex-tool.svg";
 export const SocialLinks = component$(() => {
   return (
-    <div class=" order-last sm:order-first  flex-col z-30 xl:absolute mt-6  lg:left-[2%] lg:-bottom-14 xl:-bottom-2 sm:max-w-max mx-auto   sm:gap-5  grid grid-cols-2 sm:flex gap-8 sm:flex-col ">
+    <div class=" relative z-50 order-last sm:order-first  flex-col   sm:max-w-max   sm:gap-5  grid grid-cols-2 sm:flex gap-8 sm:flex-col ">
       <a
         href="/"
         target="_blank"
@@ -14,7 +14,7 @@ export const SocialLinks = component$(() => {
         <span>Telegram</span>
       </a>
       <a
-        href="/"
+        href="https://twitter.com/upcat_solana"
         target="_blank"
         class="text-base gap-3 flex  items-center font-normal text-white transition-all duration-700 hover:text-[#FFE167]"
       >

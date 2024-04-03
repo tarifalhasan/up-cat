@@ -11,11 +11,16 @@ import { SocialLinks } from "~/components/social-links";
 export default component$(() => {
   return (
     <>
-      <div class="min-h-screen  relative overflow-hidden bg-black text-white">
+      <div class=" xl:hidden">
         <Header />
+      </div>
+      <div class="min-h-screen flex flex-col items-center justify-center h-full w-full   relative  bg-black text-white">
+        <div class="hidden xl:block">
+          <Header />
+        </div>
         <div
           class="w-full px-4 container mx-auto flex lg:flex-row
-      flex-col absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 lg:items-center gap-6"
+      flex-col xl:absolute xl:left-1/2 top-1/2 xl:-translate-y-1/2 xl:-translate-x-1/2 lg:items-center gap-6"
         >
           <div class="basis-full space-y-6 lg:basis-1/2">
             <h2 class=" text-[#FFE167] leading-none font-normal text-[2.5rem] md:text-[4.25rem] lg:text-[3rem] xl:text-[4rem] 2xl:text-[4.25rem]">
@@ -38,9 +43,14 @@ export default component$(() => {
                 The video of the kitten went viral in 2020.
               </p>
             </div>
+            <div class=" lg:block hidden">
+              <SocialLinks />
+            </div>
           </div>
           <div class="basis-full sm:gap-4 gap-10  lg:basis-1/2 flex flex-col sm:flex-row  lg:flex-row sm:items-center sm:justify-center ">
-            <SocialLinks />
+            <div class=" lg:hidden">
+              <SocialLinks />
+            </div>
             <img
               width={651}
               class="max-w-[214px] block mx-auto sm:max-w-[320px] lg:max-w-[345px] xl:max-w-[480px] 2xl:max-w-[651px]"
@@ -66,9 +76,9 @@ export default component$(() => {
         class=" absolute bottom-0 left-0"
       />
       <div class="absolute top-0 right-[25%] lg:right-[10%] h-[85px] w-[13px] bg-[#161616]"></div>
-      <div class="absolute z-20 bottom-0 left-[25%] lg:left-[8%] h-[85px] w-[13px] bg-[#161616]"></div>
-      <div class="absolute z-20 top-0 right-[40%] lg:right-[15%] h-[92px] w-[13px] bg-[#161616]"></div>
-      <div class="absolute hidden sm:block bottom-0  left-1/2  h-[92px] w-[13px] bg-[#161616]"></div>
+      <div class="absolute z-20 bottom-0 left-[25%] lg:left-[8%] lg:hidden xl:block h-[45px] xl:h-[85px] w-[13px] bg-[#161616]"></div>
+      <div class="absolute z-20 top-0 right-[40%] lg:right-[15%] h-[45px] xl:h-[92px] w-[13px] bg-[#161616]"></div>
+      <div class="absolute hidden sm:block bottom-0  left-1/2 h-[50px]  xl:h-[92px] w-[13px] bg-[#161616]"></div>
     </>
   );
 });
