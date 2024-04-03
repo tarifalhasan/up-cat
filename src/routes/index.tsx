@@ -77,8 +77,8 @@ export default component$(() => {
       />
       <div class="absolute top-0 right-[25%] lg:right-[10%] h-[85px] w-[13px] bg-[#161616]"></div>
       <div class="absolute z-20 bottom-0 left-[25%] lg:left-[8%] lg:hidden xl:block h-[45px] xl:h-[85px] w-[13px] bg-[#161616]"></div>
-      <div class="absolute z-20 top-0 right-[40%] lg:right-[15%] h-[45px] xl:h-[92px] w-[13px] bg-[#161616]"></div>
-      <div class="absolute hidden sm:block bottom-0  left-1/2 h-[50px]  xl:h-[92px] w-[13px] bg-[#161616]"></div>
+      <div class="absolute z-20 top-0 right-[40%] lg:right-[15%] h-[55px] xl:h-[92px] w-[13px] bg-[#161616]"></div>
+      <div class="absolute hidden sm:block bottom-0  left-1/2 h-[60px]  xl:h-[92px] w-[13px] bg-[#161616]"></div>
     </>
   );
 });
